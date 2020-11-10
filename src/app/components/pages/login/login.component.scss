@@ -1,0 +1,30 @@
+@import '../../../../styles.scss';
+
+.login-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box h2{
+    margin-bottom: 15px;
+}
+
+.login-box form{
+    width: 25rem;
+    max-width: 25rem;
+    border-radius: 2px;
+    background-color: #FFF;
+    border: 1px solid #ECECEC; 
+    padding: 2rem;
+}
+
+.login-box form a{
+    color: $blackTextColor;
+}
+
+.login-box form button{
+    width: 100%;
+}
