@@ -1,0 +1,19 @@
+<div class="">
+    <ul ngbNav #nav="ngbNav" class="nav-tabs">
+        <li class="nav-item">
+            <a (click)="toggleHeaderTabs(2)"><fa-icon [icon]="faUser"></fa-icon></a>
+        </li>
+        <div class="header-tab" *ngIf="showProfileTab">
+            <a routerLink="/perfil"><fa-icon [icon]="faUserCog"></fa-icon> Meu perfil</a>
+            <a routerLink="/perfil"><fa-icon [icon]="faSignOutAlt"></fa-icon> Sair</a>
+        </div>
+        <li class="nav-item">
+            <a (click)="toggleHeaderTabs(1)"><fa-icon [icon]="faBell"></fa-icon></a>
+            <div class="notification-count" *ngIf="hasNotification">
+            </div>
+        </li>
+        <div class="header-tab" *ngIf="showNotificationsTab">
+            <span>Nenhuma notificação nova</span>
+        </div>
+    </ul>
+</div>

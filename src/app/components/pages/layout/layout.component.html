@@ -1,0 +1,230 @@
+<app-header></app-header>
+
+<app-menu></app-menu>
+
+<div class="content">
+    <div class="content-header">
+        <h1>Layout Header</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <h1>HEADER H1</h1>
+                <h2>HEADER H2</h2>
+                <h3>HEADER H3</h3>
+                <h4>HEADER H4</h4>
+                <h5>HEADER H5</h5>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Ut aliquet turpis nulla. 
+                    Praesent non tincidunt sapien. Vestibulum non mauris porttitor, sagittis ex ac, interdum nisi. 
+                    Vestibulum ac felis sit amet neque luctus varius. Phasellus efficitur convallis elementum. 
+                    Fusce ut nulla eget eros condimentum facilisis. Nam rutrum ullamcorper arcu, et suscipit diam accumsan vitae. 
+                    Quisque diam lacus, posuere ac ligula varius, semper lobortis orci. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                    Fusce accumsan euismod dolor, nec ullamcorper mi rhoncus sit amet. Sed ut nulla convallis, 
+                    bibendum magna nec, placerat augue. Mauris id eleifend mauris. Cras at nibh cursus, hendrerit tellus quis, 
+                    feugiat arcu. Duis eget neque vel risus porta ullamcorper efficitur et ipsum. Aliquam iaculis luctus justo quis vestibulum.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <form>
+                    <div class="form-group">
+                        <label>Input label</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group form-row">
+                        <div class="col">
+                            <label>Input label</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label>Input label</label>
+                            <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    <div class="form-group">
+                        <label>Input label</label>
+                        <select class="form-control" >
+                            <option>Opção A</option>
+                            <option>Opção B</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Input label</label>
+                        <textarea class="form-control" ></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Opção</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="radio" class="form-check-input" id="exampleRadio1">
+                        <label class="form-check-label" for="exampleRadio1">Opção</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="radio" class="form-check-input" id="exampleRadio2">
+                        <label class="form-check-label" for="exampleRadio2">Opção</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <button type="submit" class="btn btn-primary"><fa-icon [icon]="faCheckCircle"></fa-icon> Enviar</button>
+                <button type="submit" class="btn btn-success"><loading-icon></loading-icon> Enviar</button>
+                <button type="submit" class="btn btn-warning"><fa-icon [icon]="faExclamationCircle"></fa-icon> Enviar</button>
+                <button type="submit" class="btn btn-danger"><fa-icon [icon]="faTimesCircle"></fa-icon> Enviar</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <ng-template #modal let-modal>
+                    <div class="modal-header default-header">
+                      <h4 class="modal-title">Título do modal</h4>
+                      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          Ut aliquet turpis nulla. Praesent non tincidunt sapien. 
+                          Vestibulum non mauris porttitor, sagittis ex ac, interdum nisi. 
+                          Vestibulum ac felis sit amet neque luctus varius. Phasellus efficitur convallis elementum.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary" (click)="modal.close('Close click')"> Fechar</button>
+                    </div>
+                </ng-template>
+
+                <ng-template #modalError let-modal>
+                    <div class="modal-header danger-header">
+                      <h4 class="modal-title">Título do modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Ut aliquet turpis nulla. Praesent non tincidunt sapien. 
+                            Vestibulum non mauris porttitor, sagittis ex ac, interdum nisi. 
+                            Vestibulum ac felis sit amet neque luctus varius. Phasellus efficitur convallis elementum.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" (click)="modal.close('Close click')"> Fechar</button>
+                    </div>
+                </ng-template>
+
+                <ng-template #modalForm let-modal>
+                    <div class="modal-header default-header">
+                      <h4 class="modal-title">Título do modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Input label</label>
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Input label</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" (click)="modal.close('Close click')"> Salvar</button>
+                      <button type="submit" class="btn btn-warning" (click)="modal.close('Close click')"> Cancelar</button>
+                    </div>
+                </ng-template>
+                  
+                  <button class="btn btn-primary mb-2 mr-2" (click)="openModal(modal)">Abrir modal</button>
+                  <button class="btn btn-success mb-2 mr-2" (click)="openModal(modalForm)">Abrir modal com form</button>
+                  <button class="btn btn-danger mb-2 mr-2" (click)="openModal(modalError)">Abrir modal de erro</button>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card">
+                <h1>Listagem</h1>
+                <div class="table-settings">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><fa-icon [icon]="faSearch"></fa-icon></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Pesquisar..." [(ngModel)]="searchText" (ngModelChange)="searchBox()">
+                    </div>
+                </div>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Data de Cadastro</th>
+                            <th class="td-align-right" scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let person of peopleFiltered">
+                            <td>{{person.id}}</td>
+                            <td>{{person.name}}</td>
+                            <td>{{person.created}}</td>
+                            <td class="td-align-right">
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-sm btn-primary"><fa-icon [icon]="faEye"></fa-icon> Visualizar</button>
+                                    <button type="button" class="btn btn-sm btn-primary"><fa-icon [icon]="faEdit"></fa-icon> Editar</button>
+                                    <button type="button" class="btn btn-sm btn-primary"><fa-icon [icon]="faEnvelope"></fa-icon> Enviar Email</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr *ngIf="peopleFiltered.length == 0">
+                            <td colspan="4">Nenhum dado encontrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                        <a class="page-link" routerLink="/1">
+                            <span aria-hidden="true"><fa-icon [icon]="faAngleLeft"></fa-icon></span>
+                        </a>
+                        </li>
+                        <li class="page-item active"><a routerLink="/1" class="page-link">1</a></li>
+                        <li class="page-item"><a routerLink="/2" class="page-link">2</a></li>
+                        <li class="page-item"><a routerLink="/3" class="page-link">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" routerLink="/2" >
+                            <span aria-hidden="true"><fa-icon [icon]="faAngleRight"></fa-icon></span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,67 @@
+@import '../../../../styles.scss';
+
+.nav{
+    z-index: 999;
+    background-color: $defaultColor;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    border: 0;
+}
+
+.nav-item{
+    float: right;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: #FFF;
+    font-size: 1.4em;
+}
+
+.nav-item a{
+    cursor: pointer;
+}
+
+.notification-count{
+    background-color: $dangerColorBright;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.header-tab{
+    top: 70%;
+    display: grid;
+    position: absolute;
+    z-index: 1000;
+    min-width: 100px;
+    padding: 6px 0px;
+    margin: 2px 0 0;
+    line-height: 30px;
+    background: $whiteBackground;
+    border: 1px solid #ECECEC;
+    border-radius: 4px;
+}
+
+.header-tab > span{
+    color: $blackTextColor;
+    padding: 0 12px;
+}
+
+.header-tab > a {
+    color: $blackTextColor;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.header-tab > a:hover {
+    background-color: #ebebeb;
+    text-decoration: none;
+}
