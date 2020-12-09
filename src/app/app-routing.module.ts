@@ -11,6 +11,11 @@ import { NewUserComponent } from '../app/components/pages/user/new-user/new-user
 import { ViewUserComponent } from '../app/components/pages/user/view-user/view-user.component';
 import { EditUserComponent } from '../app/components/pages/user/edit-user/edit-user.component';
 
+import { PersonComponent } from '../app/components/pages/person/person.component';
+import { NewPersonComponent } from '../app/components/pages/person/new-person/new-person.component';
+import { ViewPersonComponent } from '../app/components/pages/person/view-person/view-person.component';
+import { EditPersonComponent } from '../app/components/pages/person/edit-person/edit-person.component';
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent },
@@ -21,6 +26,13 @@ const routes: Routes = [
   { path: 'usuarios/novo', component: NewUserComponent },
   { path: 'usuarios/:id', component: ViewUserComponent },
   { path: 'usuarios/:id/editar', component: EditUserComponent },
+
+  { path: 'beneficiarios', component: PersonComponent },
+  { path: 'beneficiarios/novo', component: NewPersonComponent },
+  { path: 'beneficiarios/:id', component: ViewPersonComponent },
+  { path: 'beneficiarios/:id/editar', component: EditPersonComponent },
+
+
 
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
 ];

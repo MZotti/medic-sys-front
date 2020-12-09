@@ -22,6 +22,10 @@ import { UserComponent } from './components/pages/user/user.component';
 import { NewUserComponent } from './components/pages/user/new-user/new-user.component';
 import { ViewUserComponent } from './components/pages/user/view-user/view-user.component';
 import { EditUserComponent } from './components/pages/user/edit-user/edit-user.component';
+import { PersonComponent } from './components/pages/person/person.component';
+import { ViewPersonComponent } from './components/pages/person/view-person/view-person.component';
+import { NewPersonComponent } from './components/pages/person/new-person/new-person.component';
+import { EditPersonComponent } from './components/pages/person/edit-person/edit-person.component';
 
 
 @NgModule({
@@ -40,6 +44,10 @@ import { EditUserComponent } from './components/pages/user/edit-user/edit-user.c
     NewUserComponent,
     ViewUserComponent,
     EditUserComponent,
+    PersonComponent,
+    ViewPersonComponent,
+    NewPersonComponent,
+    EditPersonComponent,
   ],
   imports: [
     BrowserModule,
