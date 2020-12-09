@@ -1,0 +1,110 @@
+<app-header></app-header>
+
+<app-menu></app-menu>
+
+<div class="content">
+    <div class="content-header">
+        <h1>Usuários</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="table-settings">
+                    <a class="btn btn-success" routerLink="/usuarios/novo"><fa-icon [icon]="faPlus"></fa-icon> Cadastrar</a>
+                    <button class="btn btn-success" (click)="openModal(modalForm)"><fa-icon [icon]="faPlusCircle"></fa-icon> Cadastro Rápido</button>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><fa-icon [icon]="faSearch"></fa-icon></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Pesquisar..." [(ngModel)]="searchText" (ngModelChange)="searchBox()">
+                    </div>
+                </div>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Data de Cadastro</th>
+                            <th class="td-align-right" scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of usersFiltered">
+                            <td>{{user.id}}</td>
+                            <td>{{user.name}}</td>
+                            <td>{{user.role}}</td>
+                            <td>{{user.status}}</td>
+                            <td>{{user.created}}</td>
+                            <td class="td-align-right">
+                                <div class="btn-group" role="group">
+                                    <button routerLink="/usuarios/1" type="button" class="btn btn-sm btn-primary"><fa-icon [icon]="faEye"></fa-icon> Visualizar</button>
+                                    <button routerLink="/usuarios/1/editar" type="button" class="btn btn-sm btn-primary"><fa-icon [icon]="faEdit"></fa-icon> Editar</button>
+                                    <button type="button" class="btn btn-sm btn-danger"><fa-icon [icon]="faTrashAlt"></fa-icon> Excluir</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr *ngIf="usersFiltered.length == 0">
+                            <td colspan="4">Nenhum dado encontrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                        <a class="page-link" routerLink="/1">
+                            <span aria-hidden="true"><fa-icon [icon]="faAngleLeft"></fa-icon></span>
+                        </a>
+                        </li>
+                        <li class="page-item active"><a routerLink="/1" class="page-link">1</a></li>
+                        <li class="page-item">
+                        <a class="page-link" routerLink="/2" >
+                            <span aria-hidden="true"><fa-icon [icon]="faAngleRight"></fa-icon></span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #modalForm let-modal>
+        <div class="modal-header default-header">
+          <h4 class="modal-title">Cadastro rápído de usuário</h4>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group form-row">
+                    <div class="col">
+                        <label>Nome Completo *</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label>Email *</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <div class="col">
+                        <label>CPF *</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label>Cargo *</label>
+                        <select class="form-control">
+                            <option>Selecione uma opção...</option>
+                            <option>Administrador</option>
+                            <option>Médico</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-success" (click)="modal.close('Close click')"> Salvar</button>
+          <button type="submit" class="btn btn-warning" (click)="modal.close('Close click')"> Cancelar</button>
+        </div>
+    </ng-template>
+
+<app-footer></app-footer>

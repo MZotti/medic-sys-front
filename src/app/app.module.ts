@@ -18,6 +18,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoadingIconComponent } from './components/_common/loading-icon/loading-icon.component';
 import { LoadingScreenComponent } from './components/_common/loading-screen/loading-screen.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
+import { UserComponent } from './components/pages/user/user.component';
+import { NewUserComponent } from './components/pages/user/new-user/new-user.component';
+import { ViewUserComponent } from './components/pages/user/view-user/view-user.component';
+import { EditUserComponent } from './components/pages/user/edit-user/edit-user.component';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
     LayoutComponent,
     LoadingIconComponent,
     LoadingScreenComponent,
-    ProfileComponent
+    ProfileComponent,
+    UserComponent,
+    NewUserComponent,
+    ViewUserComponent,
+    EditUserComponent,
   ],
   imports: [
     BrowserModule,
