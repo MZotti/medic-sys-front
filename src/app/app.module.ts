@@ -26,6 +26,10 @@ import { PersonComponent } from './components/pages/person/person.component';
 import { ViewPersonComponent } from './components/pages/person/view-person/view-person.component';
 import { NewPersonComponent } from './components/pages/person/new-person/new-person.component';
 import { EditPersonComponent } from './components/pages/person/edit-person/edit-person.component';
+import { ScheduleComponent } from './components/pages/schedule/schedule.component';
+import { ViewScheduleComponent } from './components/pages/schedule/view-schedule/view-schedule.component';
+import { NewScheduleComponent } from './components/pages/schedule/new-schedule/new-schedule.component';
+import { EditScheduleComponent } from './components/pages/schedule/edit-schedule/edit-schedule.component';
 
 
 @NgModule({
@@ -48,6 +52,10 @@ import { EditPersonComponent } from './components/pages/person/edit-person/edit-
     ViewPersonComponent,
     NewPersonComponent,
     EditPersonComponent,
+    ScheduleComponent,
+    ViewScheduleComponent,
+    NewScheduleComponent,
+    EditScheduleComponent,
   ],
   imports: [
     BrowserModule,

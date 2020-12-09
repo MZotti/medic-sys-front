@@ -1,0 +1,55 @@
+<app-header></app-header>
+
+<app-menu></app-menu>
+
+<div class="content">
+    <div class="container">
+        <div class="content-header">
+            <h1>Editar Consulta: #1 Marcos Zotti</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <form>
+                        <div class="form-group form-row">
+                            <div class="col">
+                                <label>Beneficiário</label>
+                                <select class="form-control">
+                                    <option>Selecione uma opção...</option>
+                                    <option>Marcos Zotti</option>
+                                    <option>Rafael Montedo</option>
+                                    <option>Mikhael Bitelo</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label>Examinador</label>
+                                <select class="form-control">
+                                    <option>Selecione uma opção...</option>
+                                    <option>Jair</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <div class="col">
+                                <label>Area</label>
+                                <select class="form-control">
+                                    <option>Selecione uma opção...</option>
+                                    <option>Area da consulta to com preguiça de escrever</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label>Data/Hora da consulta</label>
+                                <input class="form-control" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Atualizar</button>
+                            <button routerLink="/usuarios/1" type="submit" class="btn btn-warning">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<app-footer></app-footer>

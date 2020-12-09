@@ -4,11 +4,11 @@ import {  faEdit,
           faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-view-user',
-  templateUrl: './view-user.component.html',
-  styleUrls: ['./view-user.component.scss']
+  selector: 'app-view-schedule',
+  templateUrl: './view-schedule.component.html',
+  styleUrls: ['./view-schedule.component.scss']
 })
-export class ViewUserComponent implements OnInit {
+export class ViewScheduleComponent implements OnInit {
   
   faEdit = faEdit;
   faTrashAlt = faTrashAlt;

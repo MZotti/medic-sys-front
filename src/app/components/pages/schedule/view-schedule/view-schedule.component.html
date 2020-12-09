@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<app-menu></app-menu>
+
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Beneficiário</span>
+                            <h4>Marcos Zotti</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Examinador</span>
+                            <h4>Jair</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Area</span>
+                            <h4>meu pinto</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Data/Hora da consulta</span>
+                            <h4>08/12/2020 12:00:00</h4>
+                        </div>
+                        <div class="col-md-12 form-actions">
+                            <button routerLink="/consultas/1/editar" class="btn btn-primary"><fa-icon [icon]="faEdit"></fa-icon> Editar</button>
+                            <button class="btn btn-danger"><fa-icon [icon]="faTrashAlt"></fa-icon> Excluir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<app-footer></app-footer>

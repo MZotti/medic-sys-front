@@ -16,6 +16,11 @@ import { NewPersonComponent } from '../app/components/pages/person/new-person/ne
 import { ViewPersonComponent } from '../app/components/pages/person/view-person/view-person.component';
 import { EditPersonComponent } from '../app/components/pages/person/edit-person/edit-person.component';
 
+import { ScheduleComponent } from '../app/components/pages/schedule/schedule.component';
+import { NewScheduleComponent } from '../app/components/pages/schedule/new-schedule/new-schedule.component';
+import { ViewScheduleComponent } from '../app/components/pages/schedule/view-schedule/view-schedule.component';
+import { EditScheduleComponent } from '../app/components/pages/schedule/edit-schedule/edit-schedule.component';
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent },
@@ -31,6 +36,11 @@ const routes: Routes = [
   { path: 'beneficiarios/novo', component: NewPersonComponent },
   { path: 'beneficiarios/:id', component: ViewPersonComponent },
   { path: 'beneficiarios/:id/editar', component: EditPersonComponent },
+
+  { path: 'consultas', component: ScheduleComponent },
+  { path: 'consultas/novo', component: NewScheduleComponent },
+  { path: 'consultas/:id', component: ViewScheduleComponent },
+  { path: 'consultas/:id/editar', component: EditScheduleComponent },
 
 
 
