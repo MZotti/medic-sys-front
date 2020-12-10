@@ -1,0 +1,41 @@
+//@import '../../../styles.scss';
+
+.cal-week-view .cal-event {
+    color: $whiteBackground;
+}
+
+.cal-month-view .cal-cell-row .cal-cell:hover, .cal-month-view .cal-cell.cal-has-events.cal-open {
+    color: $blackTextColor;
+}
+
+.cal-month-view .cal-day-cell.cal-today {
+    color: $whiteBackground;
+    background-color: $defaultColorBright;
+}
+
+.cal-month-view .cal-header .cal-today, .cal-week-view .cal-header.cal-today {
+    color: $whiteBackground;
+    background-color: $defaultColorBright;
+}
+
+.cal-month-view .cal-header .cal-today:hover, .cal-week-view .cal-header.cal-today:hover {
+    color: $whiteBackground;
+    background-color: $defaultColor;
+}
+
+.cal-month-view .cal-day-headers span, .cal-week-view .cal-day-headers span {
+    opacity: 1;
+}
+
+.cal-month-view .cal-open-day-events {
+    box-shadow: none;
+    background-color: $blackBackground;
+}
+
+.cal-week-view .cal-current-time-marker {
+    background-color: $dangerColorDark;
+}
+
+.cal-month-view .cal-day-badge {
+    background-color: $defaultColor;
+}

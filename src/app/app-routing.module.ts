@@ -21,11 +21,14 @@ import { NewScheduleComponent } from '../app/components/pages/schedule/new-sched
 import { ViewScheduleComponent } from '../app/components/pages/schedule/view-schedule/view-schedule.component';
 import { EditScheduleComponent } from '../app/components/pages/schedule/edit-schedule/edit-schedule.component';
 
+import { CalendarComponent } from '../app/components/pages/calendar/calendar.component';
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent },
   { path: 'layout', component: LayoutComponent },
   { path: 'perfil', component: ProfileComponent },
+  { path: 'agenda', component: CalendarComponent },
 
   { path: 'usuarios', component: UserComponent },
   { path: 'usuarios/novo', component: NewUserComponent },
@@ -41,9 +44,7 @@ const routes: Routes = [
   { path: 'consultas/novo', component: NewScheduleComponent },
   { path: 'consultas/:id', component: ViewScheduleComponent },
   { path: 'consultas/:id/editar', component: EditScheduleComponent },
-
-
-
+  
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
 ];
 

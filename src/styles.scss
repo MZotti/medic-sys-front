@@ -1,5 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 
+//@import "../node_modules/angular-calendar/css/angular-calendar.css";
+
 $defaultColor: #548F68;
 $defaultColorDark: #3E7852;
 $defaultColorBright: #77B58C;
@@ -332,3 +334,5 @@ fa-icon {
     padding: 0.8rem 0.6rem;
     border-top: 0;
 }
+
+@import './app/components/_common/calendar.scss';
