@@ -40,6 +40,7 @@ import { ViewScheduleComponent } from './components/pages/schedule/view-schedule
 import { NewScheduleComponent } from './components/pages/schedule/new-schedule/new-schedule.component';
 import { EditScheduleComponent } from './components/pages/schedule/edit-schedule/edit-schedule.component';
 import { CalendarComponent } from './components/pages/calendar/calendar.component';
+import { ReportComponent } from './components/pages/report/report.component';
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import { CalendarComponent } from './components/pages/calendar/calendar.componen
     NewScheduleComponent,
     EditScheduleComponent,
     CalendarComponent,
+    ReportComponent,
   ],
   imports: [
     BrowserModule,

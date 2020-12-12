@@ -21,6 +21,8 @@ import { NewScheduleComponent } from '../app/components/pages/schedule/new-sched
 import { ViewScheduleComponent } from '../app/components/pages/schedule/view-schedule/view-schedule.component';
 import { EditScheduleComponent } from '../app/components/pages/schedule/edit-schedule/edit-schedule.component';
 
+import { ReportComponent } from '../app/components/pages/report/report.component';
+
 import { CalendarComponent } from '../app/components/pages/calendar/calendar.component';
 
 const routes: Routes = [
@@ -44,6 +46,8 @@ const routes: Routes = [
   { path: 'consultas/novo', component: NewScheduleComponent },
   { path: 'consultas/:id', component: ViewScheduleComponent },
   { path: 'consultas/:id/editar', component: EditScheduleComponent },
+
+  { path: 'relatorios', component: ReportComponent },
   
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
 ];
