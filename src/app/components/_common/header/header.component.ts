@@ -26,6 +26,7 @@ export class HeaderComponent implements OnInit {
 
   public toggleHeaderTabs(tab){
     if(tab == 1){
+      this.hasNotification = false;
       this.showProfileTab = false;
       this.showNotificationsTab = !this.showNotificationsTab;
     }

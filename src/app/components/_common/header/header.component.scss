@@ -69,23 +69,23 @@
 
 .new-notification {
     z-index: 1;
-    animation: notify 0.3s forwards;
+    animation: notify 6s infinite;
 }
 
 @keyframes notify {
-    20% {
-        transform: translateY(-6px);
+    2% {
+        transform: translateX(-6px);
     }
-    40% {
-        transform: translateY(6px);
+    4% {
+        transform: translateX(6px);
     }
-    60% {
-        transform: translateY(-3px);
+    6% {
+        transform: translateX(-3px);
     }
-    80% {
-        transform: translateY(3px);
+    8% {
+        transform: translateX(3px);
     }
-    100% {
+    10% {
         transform: initial;
     }
 }
