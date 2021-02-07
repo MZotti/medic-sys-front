@@ -8,8 +8,10 @@
             <a routerLink="/login"><fa-icon [icon]="faSignOutAlt"></fa-icon> Sair</a>
         </div>
         <li class="nav-item">
-            <a (click)="toggleHeaderTabs(1)"><fa-icon [icon]="faBell"></fa-icon></a>
             <div class="notification-count" *ngIf="hasNotification">
+            </div>
+            <div [ngClass]="{'new-notification': hasNotification}">
+                <a (click)="toggleHeaderTabs(1)"><fa-icon [icon]="faBell"></fa-icon></a>
             </div>
         </li>
         <div class="header-tab" *ngIf="showNotificationsTab">

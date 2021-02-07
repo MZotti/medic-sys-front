@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   showProfileTab = false;
   showNotificationsTab = false;
 
-  hasNotification = false;
+  hasNotification = true;
 
   constructor() { }
 
